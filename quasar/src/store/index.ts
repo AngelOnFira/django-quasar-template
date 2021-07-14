@@ -32,13 +32,15 @@ declare module '@vue/runtime-core' {
   }
 }
 
+import messages from './messages'
+
 // provide typings for `useStore` helper
 export const storeKey: InjectionKey<VuexStore<StateInterface>> = Symbol('vuex-key')
 
 export default store(function (/* { ssrContext } */) {
   const Store = createStore<StateInterface>({
     modules: {
-      // example
+      messages
     },
 
     // enable strict mode (adds overhead!)

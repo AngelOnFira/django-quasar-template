@@ -2,7 +2,9 @@ export interface ExampleStateInterface {
   prop: boolean;
 }
 
-function state(): ExampleStateInterface {
+import Message from 
+
+function state(): Message {
   return {
     prop: false
   }
